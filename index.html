@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- fonts google -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+	<title>Document</title>
+
+	<!-- CSS -->
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			font-family: 'Roboto Slab', serif;
+			background: #ddd;
+		}
+
+		p{
+			padding-bottom: 20px;
+			padding-top: 20px;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+
+		.navbar{
+			background: #55E6C1;
+			height: 100px;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			position: fixed;
+			left: 0;
+			top: 0;
+			transition: .5s;
+		}
+
+		.container{
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.container_main{
+			flex-direction: column;
+			margin-top: 100px;
+		}
+
+		.brand{
+			width: 200px;
+		}
+
+		.brand h2{
+			font-size: 33px;
+		}
+
+		.menus{
+			display: flex;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.menus li{
+			padding: 20px;
+		}
+
+		.menus li a{
+			text-decoration: none;
+			color: white;
+		}
+
+		.hello{
+			background: yellow;
+			width: 100%;
+			text-align: center;
+			padding: 30px;
+			position: sticky;
+			top: 100px;
+			left: 0;
+			transition: .5s;
+		}
+
+		.menu_btn {
+			position: fixed;
+			left: 50px;
+			bottom: 50px;
+			visibility: hidden;
+			opacity: 0;
+			transition: .5s;
+			background: #e75c5c;
+			text-align: center;
+			height: 40px;
+			border-radius: 12px;
+			overflow: hidden;
+		}
+
+		.btn{
+			padding: 8px 20px;
+			font-size: 18px;
+			outline: none;
+			border: none;
+			cursor: pointer;
+			color: black;
+		}
+
+		.fixed_btn {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		.fixed_btn li{
+			line-height: 30px;
+		}
+
+		.menu_btn_active{
+			height: 200px;
+		}
+
+		.fixed_btn_active{
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.active{
+			border-bottom: 2px solid hotpink;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<div class="brand">
+				<h2>Bangladesh</h2>
+			</div>
+			<ul class="menus">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Check Out</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="hello">
+			<h2>iphone 13 banglaedsh</h2>
+		</div>
+
+	<div class="container container_main">
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Pariatur, quidem quasi porro consequuntur error tenetur nobis quia veritatis adipisci minus! Tenetur consequuntur aspernatur harum quis doloribus dolores velit quo veniam modi eligendi soluta, architecto earum eos placeat culpa. Rem optio dicta et vel, ipsam dolor dolorem aliquam soluta natus dolore temporibus incidunt consequuntur quod saepe reprehenderit earum officia, perspiciatis quasi obcaecati sint corrupti! Similique, dolores soluta minus obcaecati? Itaque, vero corporis qui magni porro fugiat pariatur voluptas fuga ex obcaecati, harum eveniet aut sed repudiandae quasi autem eligendi culpa error, ut odio nam doloremque. Magni repellendus quae dolor repellat assumenda non sit? Doloremque ut corporis obcaecati consequuntur, architecto dignissimos fugiat cupiditate quasi, ipsum deleniti officia animi laborum doloribus veritatis, blanditiis possimus! Ipsam optio consequatur, eos minima, vel neque distinctio! Aliquam accusamus repellendus natus, voluptatem odit consectetur dolores delectus illum porro sed non autem, aut voluptates in dolorem nam laudantium pariatur. Modi culpa nesciunt quaerat impedit omnis voluptas repellat ipsa pariatur commodi voluptatibus eligendi dignissimos odio veniam dolorum voluptate, ut rem optio reprehenderit nam quod perspiciatis animi. Quasi velit fugiat distinctio itaque fugit porro, dolor, et quo hic recusandae officia odio maiores aliquid inventore eligendi sint accusantium laboriosam quia dolore harum.
+		</p>
+		
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Pariatur, quidem quasi porro consequuntur error tenetur nobis quia veritatis adipisci minus! Tenetur consequuntur aspernatur harum quis doloribus dolores velit quo veniam modi eligendi soluta, architecto earum eos placeat culpa. Rem optio dicta et vel, ipsam dolor dolorem aliquam soluta natus dolore temporibus incidunt consequuntur quod saepe reprehenderit earum officia, perspiciatis quasi obcaecati sint corrupti! Similique, dolores soluta minus obcaecati? Itaque, vero corporis qui magni porro fugiat pariatur voluptas fuga ex obcaecati, harum eveniet aut sed repudiandae quasi autem eligendi culpa error, ut odio nam doloremque. Magni repellendus quae dolor repellat assumenda non sit? Doloremque ut corporis obcaecati consequuntur, architecto dignissimos fugiat cupiditate quasi, ipsum deleniti officia animi laborum doloribus veritatis, blanditiis possimus! Ipsam optio consequatur, eos minima, vel neque distinctio! Aliquam accusamus repellendus natus, voluptatem odit consectetur dolores delectus illum porro sed non autem, aut voluptates in dolorem nam laudantium pariatur. Modi culpa nesciunt quaerat impedit omnis voluptas repellat ipsa pariatur commodi voluptatibus eligendi dignissimos odio veniam dolorum voluptate, ut rem optio reprehenderit nam quod perspiciatis animi. Quasi velit fugiat distinctio itaque fugit porro, dolor, et quo hic recusandae officia odio maiores aliquid inventore eligendi sint accusantium laboriosam quia dolore harum.
+		</p>
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Pariatur, quidem quasi porro consequuntur error tenetur nobis quia veritatis adipisci minus! Tenetur consequuntur aspernatur harum quis doloribus dolores velit quo veniam modi eligendi soluta, architecto earum eos placeat culpa. Rem optio dicta et vel, ipsam dolor dolorem aliquam soluta natus dolore temporibus incidunt consequuntur quod saepe reprehenderit earum officia, perspiciatis quasi obcaecati sint corrupti! Similique, dolores soluta minus obcaecati? Itaque, vero corporis qui magni porro fugiat pariatur voluptas fuga ex obcaecati, harum eveniet aut sed repudiandae quasi autem eligendi culpa error, ut odio nam doloremque. Magni repellendus quae dolor repellat assumenda non sit? Doloremque ut corporis obcaecati consequuntur, architecto dignissimos fugiat cupiditate quasi, ipsum deleniti officia animi laborum doloribus veritatis, blanditiis possimus! Ipsam optio consequatur, eos minima, vel neque distinctio! Aliquam accusamus repellendus natus, voluptatem odit consectetur dolores delectus illum porro sed non autem, aut voluptates in dolorem nam laudantium pariatur. Modi culpa nesciunt quaerat impedit omnis voluptas repellat ipsa pariatur commodi voluptatibus eligendi dignissimos odio veniam dolorum voluptate, ut rem optio reprehenderit nam quod perspiciatis animi. Quasi velit fugiat distinctio itaque fugit porro, dolor, et quo hic recusandae officia odio maiores aliquid inventore eligendi sint accusantium laboriosam quia dolore harum.
+		</p>
+	</div>
+
+	<div class="container container_main">
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Pariatur, quidem quasi porro consequuntur error tenetur nobis quia veritatis adipisci minus! Tenetur consequuntur aspernatur harum quis doloribus dolores velit quo veniam modi eligendi soluta, architecto earum eos placeat culpa. Rem optio dicta et vel, ipsam dolor dolorem aliquam soluta natus dolore temporibus incidunt consequuntur quod saepe reprehenderit earum officia, perspiciatis quasi obcaecati sint corrupti! Similique, dolores soluta minus obcaecati? Itaque, vero corporis qui magni porro fugiat pariatur voluptas fuga ex obcaecati, harum eveniet aut sed repudiandae quasi autem eligendi culpa error, ut odio nam doloremque. Magni repellendus quae dolor repellat assumenda non sit? Doloremque ut corporis obcaecati consequuntur, architecto dignissimos fugiat cupiditate quasi, ipsum deleniti officia animi laborum doloribus veritatis, blanditiis possimus! Ipsam optio consequatur, eos minima, vel neque distinctio! Aliquam accusamus repellendus natus, voluptatem odit consectetur dolores delectus illum porro sed non autem, aut voluptates in dolorem nam laudantium pariatur. Modi culpa nesciunt quaerat impedit omnis voluptas repellat ipsa pariatur commodi voluptatibus eligendi dignissimos odio veniam dolorum voluptate, ut rem optio reprehenderit nam quod perspiciatis animi. Quasi velit fugiat distinctio itaque fugit porro, dolor, et quo hic recusandae officia odio maiores aliquid inventore eligendi sint accusantium laboriosam quia dolore harum.
+		</p>
+		
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Pariatur, quidem quasi porro consequuntur error tenetur nobis quia veritatis adipisci minus! Tenetur consequuntur aspernatur harum quis doloribus dolores velit quo veniam modi eligendi soluta, architecto earum eos placeat culpa. Rem optio dicta et vel, ipsam dolor dolorem aliquam soluta natus dolore temporibus incidunt consequuntur quod saepe reprehenderit earum officia, perspiciatis quasi obcaecati sint corrupti! Similique, dolores soluta minus obcaecati? Itaque, vero corporis qui magni porro fugiat pariatur voluptas fuga ex obcaecati, harum eveniet aut sed repudiandae quasi autem eligendi culpa error, ut odio nam doloremque. Magni repellendus quae dolor repellat assumenda non sit? Doloremque ut corporis obcaecati consequuntur, architecto dignissimos fugiat cupiditate quasi, ipsum deleniti officia animi laborum doloribus veritatis, blanditiis possimus! Ipsam optio consequatur, eos minima, vel neque distinctio! Aliquam accusamus repellendus natus, voluptatem odit consectetur dolores delectus illum porro sed non autem, aut voluptates in dolorem nam laudantium pariatur. Modi culpa nesciunt quaerat impedit omnis voluptas repellat ipsa pariatur commodi voluptatibus eligendi dignissimos odio veniam dolorum voluptate, ut rem optio reprehenderit nam quod perspiciatis animi. Quasi velit fugiat distinctio itaque fugit porro, dolor, et quo hic recusandae officia odio maiores aliquid inventore eligendi sint accusantium laboriosam quia dolore harum.
+		</p>
+		<p>
+			Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Pariatur, quidem quasi porro consequuntur error tenetur nobis quia veritatis adipisci minus! Tenetur consequuntur aspernatur harum quis doloribus dolores velit quo veniam modi eligendi soluta, architecto earum eos placeat culpa. Rem optio dicta et vel, ipsam dolor dolorem aliquam soluta natus dolore temporibus incidunt consequuntur quod saepe reprehenderit earum officia, perspiciatis quasi obcaecati sint corrupti! Similique, dolores soluta minus obcaecati? Itaque, vero corporis qui magni porro fugiat pariatur voluptas fuga ex obcaecati, harum eveniet aut sed repudiandae quasi autem eligendi culpa error, ut odio nam doloremque. Magni repellendus quae dolor repellat assumenda non sit? Doloremque ut corporis obcaecati consequuntur, architecto dignissimos fugiat cupiditate quasi, ipsum deleniti officia animi laborum doloribus veritatis, blanditiis possimus! Ipsam optio consequatur, eos minima, vel neque distinctio! Aliquam accusamus repellendus natus, voluptatem odit consectetur dolores delectus illum porro sed non autem, aut voluptates in dolorem nam laudantium pariatur. Modi culpa nesciunt quaerat impedit omnis voluptas repellat ipsa pariatur commodi voluptatibus eligendi dignissimos odio veniam dolorum voluptate, ut rem optio reprehenderit nam quod perspiciatis animi. Quasi velit fugiat distinctio itaque fugit porro, dolor, et quo hic recusandae officia odio maiores aliquid inventore eligendi sint accusantium laboriosam quia dolore harum.
+		</p>
+	</div>
+
+	<div class="menu_btn">
+		<p class="btn">menus</p>
+		<ul class="fixed_btn">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Home</a></li>
+		</ul>
+	</div>
+
+	<script>
+		// navbar done
+		window.onscroll = function() {zero()};
+		function zero() {
+			if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+				document.querySelector('.navbar').style.height = '60px';
+				document.querySelector('.hello').setAttribute('style', 'top: 60px; padding: 20px;');
+				document.querySelector('.menu_btn').setAttribute('style', 'visibility: visible; opacity: 1;');
+			}else{
+				document.querySelector('.navbar').style.height = '100px';
+				document.querySelector('.hello').setAttribute('style', 'top: 100px; padding: 30px;');
+				document.querySelector('.menu_btn').setAttribute('style', 'visibility: hidden; opacity: 0;');
+			}
+		};
+
+		// menu button
+
+		var menuBtn = document.querySelector('.menu_btn');
+		var btn = document.querySelector('.btn');
+		var fixedBtn = document.querySelector('.fixed_btn');
+
+		btn.addEventListener('click', function() {
+			menuBtn.classList.toggle('menu_btn_active');
+			fixedBtn.classList.toggle('fixed_btn_active');
+			
+		});
+
+	</script>
+</body>
+</html>
